@@ -1,2 +1,2 @@
-# task-manager
+# Task Manager
 Simple Task Manager
