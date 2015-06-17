@@ -1,0 +1,19 @@
+<h2>Register</h2>
+<%= form_for @user do |f| %>
+  <%= render 'layouts/better_errors', object: f.object %>
+  <div class="input-group">
+    <%= f.text_field :email, class: "form-control", placeholder:"Email" %>
+  </div>
+  <div class="input-group">
+    <%= f.text_field :name, class: "form-control", placeholder:"Name" %>
+  </div>
+  <div class="input-group">
+    <%= f.password_field :password, class: "form-control", placeholder: "password" %>
+  </div>
+  <div class="input-group">
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "password confirm" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Register", class: "btn btn-primary" %>
+  </div>
+<% end %>
